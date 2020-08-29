@@ -86,7 +86,7 @@ data = {
 }
 # 使用session进行post请求的发送
 response = session.post(url=login_url, heaaders=headers, data=data)
-if(response.status_code == 200):
+if response.status_code == 200:
     # 爬取当前用户的个人主页对应的页面数据
     detail_url = 'http://www.renren.com/xxxxxx/profile'
     # 使用携带cookie的session对象进行get请求的发送

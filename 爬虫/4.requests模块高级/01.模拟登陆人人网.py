@@ -82,7 +82,7 @@ data = {
     'f': 'https%3A%2F%2Fwww.baidu.com%2Flink%3Furl%3DM5jR4aNe2K00lUdfWMqs6RBSyTGgSXDFhOMhuPG6C4u%26wd%3D%26eqid%3Dd382eba10001fdf7000000055f48a73d'
 }
 response = requests.post(url=login_url, heaaders=headers, data=data)
-if(response.status_code == 200):
+if response.status_code == 200:
     login_page_text = response.text
     with open('./爬虫/4.requests模块高级/人人网.html', 'w', encoding='utf-8') as fp:
         fp.write(login_page_text)
