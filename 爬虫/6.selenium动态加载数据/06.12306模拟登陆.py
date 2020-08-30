@@ -42,9 +42,9 @@ else:
 print(site_list)
 
 # 模拟输入和点击
-broser.find_element_by_id('J-userName').send_keys()
+broser.find_element_by_id('J-userName').send_keys('xxxxxx')
 sleep(0.5)
-broser.find_element_by_id('J-password').send_keys()
+broser.find_element_by_id('J-password').send_keys('xxxxxx')
 sleep(0.5)
 img_ele = broser.find_element_by_id('J-loginImg')
 for s in site_list:

@@ -17,10 +17,10 @@ sleep(1)
 
 # 定位到输入框并填入账号信息
 username_input = broser.find_element_by_id('u')
-username_input.send_keys('2791332015')
+username_input.send_keys('xxxxxxx')
 sleep(0.5)
 pwd_input = broser.find_element_by_id('p')
-pwd_input.send_keys('whlg201898.')
+pwd_input.send_keys('xxxxxxx')
 sleep(0.5)
 
 # 定位到登录按钮并点击
